@@ -1,0 +1,67 @@
+
+</body>
+  <h2>Patient Information</h2>
+  
+  <form action="" method="post">
+    {% csrf_token %}
+  
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="1">
+    <label for="male">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" id="female" name="gender" value="2">
+    <label for="female">Female</label><br><br>
+    
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" name="height"><br><br>
+    
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight"><br><br>
+    
+    <label for="ap_hi">Systolic blood pressure (ap_hi):</label>
+    <input type="number" id="ap_hi" name="ap_hi"><br><br>
+    
+    <label for="ap_lo">Diastolic blood pressure (ap_lo):</label>
+    <input type="number" id="ap_lo" name="ap_lo"><br><br>
+    
+    <label for="cholesterol">Cholesterol level:</label>
+    <select id="cholesterol" name="cholesterol">
+      <option value="1">Normal</option>
+      <option value="2">Above Normal</option>
+      <option value="3">Well Above Normal</option>
+    </select><br><br>
+    
+    <label for="gluc">Glucose level:</label>
+    <select id="gluc" name="gluc">
+      <option value="1">Normal</option>
+      <option value="2">Above Normal</option>
+      <option value="3">Well Above Normal</option>
+    </select><br><br>
+    
+    <label for="smoke">Do you smoke: Yes</label> 
+    <input type="radio" id="smoke" name="smoke" value="1">&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="smoke"> No</label> 
+    <input type="radio" id="smoke" name="smoke" value="0"><br><br>
+    
+    <label for="alco">Do you consume alcohol: Yes</label>
+    <input type="radio" id="alco" name="alco" value="1">&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="alco">No</label>
+    <input type="radio" id="alco" name="alco" value="0"><br><br>
+    
+    <label for="active">Are you physically active: Yes</label>
+    <input type="radio" id="active" name="active" value="1">&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="active">No</label>
+    <input type="radio" id="active" name="active" value="0"><br><br>
+
+    <input type="submit" value="Submit">
+  
+  </form>
+
+
+
+
+
+</body>
+
